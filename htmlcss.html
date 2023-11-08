@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    
+
+    .head{
+        background-image: url(./iStock-1423006934.jpg);
+        height: 100vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;  
+        
+        
+    }
+   
+
+   header .navbar{
+    position:fixed; top:0px; left:0px; right:0px; 
+    z-index: 1;
+    background-color: rgba(240, 122, 204, 0.623);
+   }
+
+   
+   .container .navbar{
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    
+   }
+
+   .block{
+    display:flex;
+  }
+
+  .block li a{
+    display: flex;
+  }
+
+   .navbar .log a{
+    text-decoration: none;
+    font-size: 30px;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+
+   .navbar .log a{
+    text-align: left;
+   }
+
+  .navbar ul li{
+    list-style:none;
+    display: inline-block;
+    margin: 0 12px;
+    line-height: 70px;
+    
+  }
+  .navbar ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 0px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .navbar ul li a.active,
+  .navbar ul li a:hover{
+    background: #573a9f75;
+    border-radius: 3px;
+  }
+
+  .baslık{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    margin: auto;
+    transform: translate(-70%,-40%);
+    font-family: 'Ubuntu', sans-serif;
+    user-select: none;
+    color: rgb(255, 0, 200);
+    text-shadow: -2px 0 black, 0 2px black, 1px 0 black, 0 -2px black;
+    color: rgb(244, 5, 236) ;
+    
+    
+  }
+
+  .baslık h1{
+    font-size: 70px;
+  }
+
+  .baslık h2{
+    font-size: 40px;
+  }
+
+  .head .navbar{
+    border: 1px solid rgba(240, 122, 204, 0.623);
+    border-radius: 12px;
+    margin: 10px;
+  }
+
+
+  .buttons{
+    display: block;
+    position: absolute;
+    right: 24px;
+  }
+.buttons button{
+  color: rgb(240, 122, 205);
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 4px;
+  border: rgba(240, 122, 204, 0.623);
+}
+
+section .img-two{
+  background-color: rgba(4, 4, 7, 0.989);
+  height: 100vh;
+  background-size: 100% 100%;
+  
+  
+}
+
+.space{
+  width: 100%;
+  height: 40px;
+  background-color: blueviolet;
+  text-align: center;
+  font-size: 20px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 8px;
+}
+
+
+
+.baslik-iki{
+  color:aliceblue;
+  text-align: center;
+  font-family: 'Ubuntu' ,sans-serif;
+  font-size: 25px;
+  padding-top: 60px;
+}
+span{
+  flex-direction: column;
+  color: aliceblue;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(8rem,1fr));
+  gap: 0.5rem;
+  padding-top: 50px;
+  }
+
+.box .box-head{
+width: 153px;
+height: 257px;
+border: 2px solid palevioletred;
+margin: 50px;
+}
+
+.box-head img{
+  width: 150px;
+  height: 200px;
+  
+}
+
+
+.box-button button{
+  background-color: pink;
+  font-family: 'Ubuntu', sans-serif;
+  height: 30px;
+  width: 80px;
+  margin-top: 8x;
+  
+}
+
+ button:hover{  background-color: blueviolet;
+  color: aliceblue;
+}
+
+
+.blog{
+  background-image: url(./lipstick-8277203_1280.jpg);
+  height: 100vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.blogpage{
+  color: aliceblue;
+  font-size: 37px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  padding-top: 60px;
+  }
+
+
+.blog-write{
+  color: black;
+  font-size: 18px;
+  border: 2px solid pink;
+  background-color: rgba(255, 192, 203, 0.577);
+  font-family: 'Ubuntu', sans-serif;
+  margin: 20px;
+ 
+ 
+                                
+}
+.cont-block{
+  display: flex;
+  border: 2px solid pink;
+}
+  
+.hakkımızda{
+  background-image: url(./porselen-makyaj.webp);
+  height: 100vh;
+  background-size: 100% 100%;
+
+}
+
+.hakkımızda-p{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Ubuntu' , sans-serif;
+  padding-bottom: 100px;
+  margin: 50px;
+  }
+
+  .h-border{
+    width: 500px;
+    padding-top: 200px;
+   }
+
+  .h-h3{
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    text-align: center;
+  }
+
+  .foot{
+    background-color:rgba(4, 4, 7, 0.989);
+    height: 100vh;
+    background-size: 100% 100%;
+  }
+
+  .foot-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .container-form{
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 600px;
+    
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+  }
+
+  .container-form h1{
+
+    text-align: center;
+    color: #333;
+  }
+
+  .form-group{
+    margin-bottom: 20px;
+  }
+
+label{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.container-form button{
+  background-color: rgb(251, 243, 244);
+  color:rgb(240, 122, 205);
+  font-family: 'Ubuntu', sans-serif;
+  padding: 10px 20px;
+  border: 1px solid pink;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container-form button:hover{
+  background-color: blueviolet;
+  color: white;
+}
+
+.foot h3{
+  text-align: center;
+  font-size: 37px;
+  font-family: 'Ubuntu', sans-serif;
+  color: aliceblue;
+  padding-top: 40px;
+}
+.map{
+  display: block;
+  }
+.icon i{
+  padding: 0px 20px;
+  margin-top: 40px;
+  color: aliceblue;
+  justify-content: center;
+}
+
+.hamburger{
+  display: block;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.bar{
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  margin: 4px 0;
+  
+}
+
+
+@media screen and (max-width:760px) {
+  .navbar{
+    display: block;
+    flex-direction:row;
+    background-color: #fff;
+    position:relative;
+    top: 10px;
+    right: 0;
+    left: 0;
+    padding: 10px;
+    
+  }
+  .navbar ul li {
+    display: none;
+  }
+.navbar .buttons{
+  align-items:unset;
+}
+  .hamburger{
+    display: block;
+    padding-left: 10px;
+  }
+.box .box-head{
+  margin: 0px;
+}
+
+.foot-nav{
+ flex-direction: column;
+ background-color: black;
+}
+.map{
+  padding-top: 20px ;
+}
+}
+</style>
+
+<body>
+    
+    <header class="head">
+        
+        <div class="container">
+            <div class="navbar">
+            <div class="log">
+                <a href="#">Logo</a>
+            </div>
+
+            <ul class="block">
+                <li><a href="#" class="active">Anasayfa</a></li>
+                <li><a href="#">Ürünler</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">İletişim</a></li>
+                <li><a href="#">Sepetim</a></li>
+            </ul>
+            <div class="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <div class="buttons">
+              <button>Giriş Yap</button>
+              <button>Abone Ol</button>
+          </div>
+        
+        </div>
+       
+        </div>
+
+    </header>
+
+    <div class="baslık">
+        <h1>ANILARI PARLAT</h1>
+        <h2>CESUR OL!</h2>
+       
+    </div>
+
+    <div class="space">
+      <p>Seni Harekete Geçiren Güzelliği keşfet!</p>
+    </div>
+
+      <section class="two">
+    <div class="img-two">
+
+      <div class="baslik-iki">
+        <h2>Ürünler</h2>
+      </div>
+
+      <section class="ürünler">
+     
+      <div class="box-container">
+
+        <div class="box">
+
+          <div class="box-head">
+
+            <img src="./iStock-1755556356.jpg" alt="">
+            <span>Far Paleti <span>199.90 ₺</span></span>
+            <div class="box-button">
+              <button>Sepete Ekle</button>
+            </div>
+          </div>
+
+        </div>
+
+       
+
+
+        <div class="box">
+
+          <div class="box-head">
+
+
+            <img src="./iStock-1397788158.jpg" alt="">
+            <span>Parfüm <span>320.99 ₺</span></span>
+            <div class="box-button">
+              <button>Sepete Ekle</button>
+            </div>
+          </div>
+
+        </div>
+
+       
+
+
+        <div class="box">
+
+          <div class="box-head">
+
+            <img src="./iStock-1405998929.jpg" alt="">
+            <span>Pudra <span>170 ₺</span></span>
+            <div class="box-button">
+              <button>Sepete Ekle</button>
+            </div>
+          </div>
+
+        </div>
+
+     
+
+
+        <div class="box">
+
+          <div class="box-head">
+
+
+            <img src="./red-lipstick-7938153_1280.jpg" alt="">
+            <span>Ruj <span>210.90 ₺</span></span>
+            <div class="box-button">
+              <button>Sepete Ekle</button>
+            </div>
+          </div>
+
+        </div>
+
+           
+
+
+            <div class="box">
+
+              <div class="box-head">
+    
+    
+                <img src="./Uzun-m-rl-4D-hacimli-maskara-y-ksek-kaliteli-su-ge-irmez-siyah-maskara-kad-nlar.webp" alt="">
+                <span>Rimel <span>240 ₺</span></span>
+                <div class="box-button">
+                  <button>Sepete Ekle</button>
+                </div>      
+
+              </div>
+    
+            </div>
+    
+               
+          
+
+                <div class="box">
+
+                  <div class="box-head">
+        
+        
+                    <img src="./images.jpg" alt="">
+                    <span>Eyeliner <span>230.90 ₺</span></span>
+                    <div class="box-button">
+                      <button>Sepete Ekle</button>
+                    </div>
+                  </div>
+        
+                </div>
+        
+                    
+
+      </div>
+
+    </section>
+  </section>
+
+  <div class="space">
+    <p>Muhteşem Yüzünüz İçin Muhteşem Renkler!</p>
+  </div>
+
+  <section class="blog">
+    <section>
+
+    <div class="cont-blog">
+     
+      <div class="blogpage">
+        <h3>Blog</h3>
+      </div>
+
+    </div>
+     
+    <div class="write">
+      <div class="blog-write">
+        <p>Cilt Alt Tonuna Göre Ruj Nasıl Seçilir? <br>
+          Makyaj malzemesi seçerken sana en çok yakışacak, cildinle en iyi şekilde uyum sağlayacak ürünleri bulmak için cilt alt tonuna dikkat etmek büyük önem taşır. Sadece fondöten, kapatıcı gibi ten ürünlerini seçerken değil en güzel ruj renkleri arasından seçim yaparken de cilt renginden ziyade cilt alt tonunu göz önünde bulundurmalısın. Hadi gel, cilt alt tonu bulma konusunda hangi durumlar göz önüne alınır, cilt ve cilt alt tonuna göre ruj rengi nasıl seçilir bir göz atalım. <br>
+          
+          
+          
+          Sarılık ve turunculuk içeren sıcak alt tonlu rujlar, 
+          Koyu kırmızı, bordo, mürdüm, koyu pembe ve kahverengi tonlardaki rujlar, 
+          Doğal ve açık tonlu rujlar, (Dudaklarının cansız görünmemesi için dudaklarının kendi renginden daha açık tonda bir ruj tercih etmemelisin.) 
+          Kahverengilik içeren koyu kırmızı rujlar. 
+          Nötr Alt Tona Göre Ruj Seçimi
+          Eğer buğday tenliysen ve güneşte kolay bronzlaşıyorsan cildin nötr alt tonlu demektir. Bundan emin olmak için bileğinin iç tarafındaki damarları kontrol etmelisin. Eğer bileğindeki hem yeşil hem de mavi renkli damarlar görüyorsan nötr alt tonlu bir cilde sahipsin.  </p>
+      </div>
+    </div>
+
+   </section>
+  </section>
+
+  <div class="space">
+    <p>En Özel Günlerde Sizinle!</p>
+  </div>
+
+  <section>
+
+  <div class="hakkımızda">
+      <div class="h-border">
+        <div class="h-h3">
+          <h3>Hakkımızda</h3>
+        </div>
+      <div class="hakkımızda-p">
+      <p>Kozmetik sektöründe 1984 yılından bu yana hizmet veren firmamız her geçen gün artan üretim kapasitesi ve geniş ürün yelpazesiyle bu sektörde emin adımlarla ilerlemektedir. Bugün 15.000 m2’yi bulan tesislerinde her zevke ve her ihtiyaca uygun üretim yapan firmamız, sadece yurtiçi pazarına yönelik hizmet vermekle kalmayıp Avrupa ve Ortadoğu ülkelerine yaptığı yıllık 5 milyon dolarlık ihracatla da Türk ekonomisine büyük katkı sağlamaktadır. <br>
+
+        Üretimde çevre ve insan sağlığını her şeyin üstünde tutan CN Kozmetik, bu ilkesini müşteri memnuniyeti ile birleştirerek Türk ekonomisi içerisinde kendine saygın bir yer edinmeyi başarmıştır.</p>
+
+    </div>
+  </div>
+  </div>
+
+  </section>
+
+  <div class="space">
+    <p>Muhteşem Yüzünüz İçin Muhteşem Renkler!</p>
+  </div>
+
+ <footer class="foot">
+  <h3>İletişim</h3>
+  <div class="foot-nav">
+
+    <div class="form-control">
+      
+      <div class="container-form">
+        <h1>İletişim Formu</h1>
+        
+      <form action="İletişim Formu"></form>
+      <div class="form-group">
+        <label for="adsoyad">Adınız Soyadınız:</label>
+        <input type="text" id="name" name="soyad" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-posta Adresiniz:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mesaj">Mesajınız:</label>
+        <textarea name="mesaj" id="mesaj" cols="30" rows="10" required></textarea>
+      </div>
+
+      <button type="submit"  class="button-form">Gönder</button>
+    </div>
+  </div>
+
+
+   <div class="icon">
+    <i class="fa-brands fa-facebook fa-2xl"></i>
+    <i class="fa-brands fa-instagram fa-2xl"></i>
+    <i class="fa-brands fa-twitter fa-2xl"></i>
+  </div>
+  
+   
+   <div class="map">
+    <map name=""><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2507.5229251395867!2d32.33091087722914!3d41.63490733324304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1699438067807!5m2!1str!2str" width="350" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></map>
+  </div>
+    
+  </div>
+
+
+ </footer>
+    
+ <script src="https://kit.fontawesome.com/16e534c179.js" crossorigin="anonymous"></script>
+</body>
+</html>
